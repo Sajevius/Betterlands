@@ -1,0 +1,31 @@
+modLoader="javafml" 
+loaderVersion="[36,)" 
+license="GNU GPLv3"
+
+[[mods]] 
+modId="betterlands" 
+version="1.16.5-1.0.0" 
+displayName="Betterlands"
+logoFile="examplemod.png" 
+credits="Special, special thanks to MCreator for allowing me to create the original edition of this mod!" 
+authors="Love, Cheese and small house plants" 
+description='''
+A mod that expands upon the torrid and desolate badlands biome, making it a bit livelier by adding a myriad of fun features!
+
+Original mod made with MCreator. Thanks to learning Java and Forge I was finally able to port this mod, which garnered tons of downloads, into one with full, non-generated code.
+I will always keep the MCreator version in my heart :,)
+'''
+
+[[dependencies.betterlands]] 
+    modId="forge" 
+    mandatory=true 
+    versionRange="[36,)" 
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.betterlands]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.5,1.17)"
+    ordering="NONE"
+    side="BOTH"

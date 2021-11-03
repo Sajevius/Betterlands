@@ -10,7 +10,7 @@ import net.minecraft.world.server.ServerWorld;
 import java.util.Random;
 
 public class GlossyTerracottaBlock extends Block {
-    public static final BooleanProperty EXTRA_SLIPPERY = BooleanProperty.create("extra_slippery");
+    public static final BooleanProperty EXTRA_SLIPPERY = BooleanProperty.create("extra_slippery"); // experimental
 
     public GlossyTerracottaBlock(Properties properties) {
         super(properties);
@@ -26,7 +26,7 @@ public class GlossyTerracottaBlock extends Block {
     public float getSpeedFactor() {
         BlockState state = this.defaultBlockState();
         if(state.getValue(EXTRA_SLIPPERY) == true) {
-            return 1.6F;
+            return 1.6F; // experimental
         } else return 1.0F;
     }
 
@@ -35,6 +35,7 @@ public class GlossyTerracottaBlock extends Block {
         if(world.isRaining() && world.canSeeSky(pos)) {
             world.setBlock(pos, state.cycle(EXTRA_SLIPPERY), 2);
         }
+        // experimental
     }
 
     @Override
@@ -45,5 +46,6 @@ public class GlossyTerracottaBlock extends Block {
     @Override
     protected void createBlockStateDefinition(StateContainer.Builder<Block, BlockState> state) {
         state.add(EXTRA_SLIPPERY);
+        // experimental
     }
 }

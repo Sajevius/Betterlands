@@ -13,5 +13,6 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 public class BetterlandsClient {
     @SubscribeEvent
     public static void clientSetup(FMLClientSetupEvent event) {
+        // this may be temporary
     }
 }

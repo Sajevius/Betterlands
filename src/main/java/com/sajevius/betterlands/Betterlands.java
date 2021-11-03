@@ -1,9 +1,13 @@
 package com.sajevius.betterlands;
 
 
+import com.sajevius.betterlands.client.renderer.GilaMonsterRenderer;
+import com.sajevius.betterlands.init.BetterlandsEntities;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.fml.client.registry.RenderingRegistry;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
@@ -28,7 +32,9 @@ public class Betterlands {
 
         BetterlandsBlocks.BLOCKS.register(bus);
         BetterlandsItems.ITEMS.register(bus);
+        BetterlandsEntities.ENTITIES.register(bus);
 
+        bus.addListener(this::clientSetup);
         bus.addListener(this::setup);
 
         MinecraftForge.EVENT_BUS.register(this);
@@ -37,5 +43,9 @@ public class Betterlands {
     private void setup(final FMLCommonSetupEvent event)
     {
         LOGGER.info("Setting up Betterlands v1.0.0!");
+    }
+
+    public void clientSetup(final FMLClientSetupEvent event) {
+        RenderingRegistry.registerEntityRenderingHandler(BetterlandsEntities.GILA_MONSTER.get(), GilaMonsterRenderer::new);
     }
 }

@@ -2,6 +2,7 @@
   "itemGroup.betterlands": "Betterlands",
 
   "item.betterlands.large_horn": "Large Horn",
+  "item.betterlands.gila_monster_spawn_egg": "Gila Monster Spawn Egg",
 
   "block.betterlands.glossy_terracotta": "Glossy Terracotta",
   "block.betterlands.white_glossy_terracotta": "White Glossy Terracotta",
@@ -9,5 +10,17 @@
   "block.betterlands.magenta_glossy_terracotta": "Magenta Glossy Terracotta",
   "block.betterlands.light_blue_glossy_terracotta": "Light Blue Glossy Terracotta",
   "block.betterlands.yellow_glossy_terracotta": "Yellow Glossy Terracotta",
-  "block.betterlands.lime_glossy_terracotta": "Lime Glossy Terracotta"
+  "block.betterlands.lime_glossy_terracotta": "Lime Glossy Terracotta",
+  "block.betterlands.pink_glossy_terracotta": "Pink Glossy Terracotta",
+  "block.betterlands.gray_glossy_terracotta": "Gray Glossy Terracotta",
+  "block.betterlands.light_gray_glossy_terracotta": "Light Gray Glossy Terracotta",
+  "block.betterlands.cyan_glossy_terracotta": "Cyan Glossy Terracotta",
+  "block.betterlands.purple_glossy_terracotta": "Purple Glossy Terracotta",
+  "block.betterlands.blue_glossy_terracotta": "Blue Glossy Terracotta",
+  "block.betterlands.brown_glossy_terracotta": "Brown Glossy Terracotta",
+  "block.betterlands.green_glossy_terracotta": "Green Glossy Terracotta",
+  "block.betterlands.red_glossy_terracotta": "Red Glossy Terracotta",
+  "block.betterlands.black_glossy_terracotta": "Black Glossy Terracotta",
+
+  "entity.betterlands.gila_monster": "Gila Monster"
 }

@@ -1,24 +1,15 @@
 package com.sajevius.betterlands.entity;
 
-import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.entity.*;
 import net.minecraft.entity.ai.attributes.AttributeModifierMap;
 import net.minecraft.entity.ai.attributes.Attributes;
 import net.minecraft.entity.ai.goal.*;
-import net.minecraft.entity.merchant.villager.AbstractVillagerEntity;
 import net.minecraft.entity.monster.CreeperEntity;
-import net.minecraft.entity.monster.ZombieEntity;
-import net.minecraft.entity.monster.ZombifiedPiglinEntity;
-import net.minecraft.entity.passive.IronGolemEntity;
 import net.minecraft.entity.passive.RabbitEntity;
-import net.minecraft.entity.passive.TameableEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effects;
-import net.minecraft.util.SoundEvent;
-import net.minecraft.util.SoundEvents;
 import net.minecraft.world.World;
-import net.minecraft.world.server.ServerWorld;
 
 public class GilaMonsterEntity extends CreatureEntity {
     public GilaMonsterEntity(EntityType<? extends GilaMonsterEntity> type, World world) {

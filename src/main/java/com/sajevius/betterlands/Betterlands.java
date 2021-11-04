@@ -23,7 +23,7 @@ public class Betterlands {
     public static Betterlands instance;
 
     public static final String MODID = "betterlands";
-    private static final Logger LOGGER = LogManager.getLogger();
+    public static final Logger LOGGER = LogManager.getLogger();
     public static final BetterlandsItemGroup ITEM_GROUP = new BetterlandsItemGroup();
 
     public Betterlands() {
